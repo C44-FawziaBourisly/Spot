@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/Path 2186.png" />
+    <link rel="stylesheet" href="./glider.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./js/bootstrap.bundle.min.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Spot | Explore Kuwait City</title>
+  </head>
+  <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-drak navbar2">
+          <!-- <div class="nav-contianer"> -->
+          <a class="navbar-brand" href="./index.html"
+            ><img class="logo" src="./img/logooo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active home">
+                <a class="nav-link text-dark" href="./index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown text-white">
+                <a
+                  class="nav-link dropdown-toggle text-dark navbar-a"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Top Rated Places
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <!-- <li class="search-bar">
+                <input class="search-bar" type="text" placeholder="Search">
+              </li> -->
+  
+              <!-- -----------searchbar-------------- -->
+  
+              <form class="search-form">
+                  <div class="search-form__input-holders">
+                      <input class="search-form__input" type="text" name="search-event" placeholder="What are you looking for?">
+                      <span class="select2 select2-container select2-container--default select2-container--below select2-container--focus" dir="ltr" style="width: 200px;">
+                          <span class="selection">
+                              <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-mder-container">
+                                 <!-- <span class="select2-selection__rendered" id="select2-mder-container" title="Location?">Location?
+                                 </span> -->
+                                   <span class="select2-selection__arrow" role="presentation">
+                                       <b role="presentation"></b>
+                                   </span>
+                              </span>
+                          </span>
+                          <span class="dropdown-wrapper" aria-hidden="true"></span>
+                      </span>
+                      <select class="search-form__input search-form__input-location js-example-basic-multiple select2-hidden-accessible " tabindex="-1" aria-hidden="true">
+                          <option >Location?</option>
+                          <option > Kuwait City</option>
+                          <option> Hawally</option>
+                      </select>
+                 
+                  </div>
+              </form>
+  
+              <li class="nav-item sign-in sign-in2">
+                <a class="nav-link text-dark navbar-a" href="#">Sign in </a>
+              </li>
+              <li class="nav-item">
+                <a class="Regester nav-link text-dark navbar-a" href="#"
+                  >Regester
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+  </header>
+
+  <section class="form">
+  <h1>Register</h1>
+
+  <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+
+  <!-- <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form> -->
+  </section>
+
+  <script src="./glider.min.js"></script>
+
+  <script src="./script.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/7.24.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/7.24.0/firebase-analytics.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+</body>
+</html>

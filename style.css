@@ -7,6 +7,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  overflow-x: hidden;
 }
 /* header {
   position: fixed;
@@ -43,6 +44,10 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05),
     inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
+/* .spot {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+} */
 
 .hero {
   min-height: 100vh;
@@ -54,17 +59,19 @@ form {
   display: flex;
   justify-content: center;
 }
-
+/* .dropdown-pages {
+  background: none;
+} */
 .logo {
-  width: 30px;
+  width: 90px;
   height: 35px;
-  margin-left: 100px;
+  margin-left: 60px;
 }
 .regester {
   margin-right: 100px;
 }
 .sign-in {
-  margin-left: 45rem;
+  margin-left: 50rem;
 }
 .sign-in2 {
   margin-left: 8rem;
@@ -118,11 +125,11 @@ form {
 }
 
 .hero3 {
-  min-height: 55vh;
+  min-height: 50vh;
 }
 .slide {
   border-radius: 20px;
-  width: 350px;
+  width: 50px;
   height: 397px;
 }
 /* figure {
@@ -163,6 +170,7 @@ form {
   transition: all 0.2s ease-in-out;
   border-radius: 5px;
   width: fit-content;
+
   /* margin-left: 15px;
   margin-right: 15px; */
 }
@@ -174,7 +182,9 @@ form {
   transform: scale(1.1);
   border-radius: 5px;
 }
-
+.glider-contain {
+  margin-left: 60px;
+}
 .place-content {
   position: absolute;
   bottom: 3.5rem;
@@ -269,11 +279,11 @@ figure {
   display: block;
 }
 .glider-next {
-  right: 50px;
+  right: 85px;
   margin-top: 4rem;
 }
 .glider-prev {
-  left: 50px;
+  margin-left: -10px;
   margin-top: 4rem;
 }
 
@@ -331,21 +341,24 @@ figure {
 .counters {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
-  background-color: #e9b372;
+  justify-content: flex-end;
+  height: 60vh;
 }
+
 .counter-container {
   max-width: 1100px;
   margin: 0 auto;
   overflow: auto;
+  background-color: #e9b372;
+  align-items: center;
+  height: 200px;
 }
 .counters .counter-container {
   display: grid;
 
   grid-template-columns: repeat(4, 1fr);
   /* text-align: center; */
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 .i-contianer {
   margin-right: 70px;
@@ -355,7 +368,6 @@ figure {
 .counter i {
   margin-bottom: 5px;
 }
-
 .i-contianer {
   display: flex;
 }
@@ -367,15 +379,359 @@ figure {
 }
 .counters .counter {
   font-size: 35px;
+  color: white;
   /* margin: 10px 0; */
   margin-left: 8px;
 }
 .counter-title {
   font-size: 15px;
-  color: #8a8a8a;
+  color: #ffffff;
   margin-left: 10px;
   width: 150px;
 }
+
+.hero4 {
+  height: 50vh;
+}
+
+.card {
+  margin-top: 50px;
+}
+/* ////////////////////////////sign in///////////////////////////////// */
+
+.sign-form__label {
+  color: #363636;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+.sign__area {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.sign-form__input-text {
+  display: block;
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+  color: #999999;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  background: #ffffff;
+  outline: none;
+  border: 1px solid #dddddd;
+  margin: 0 0 1.875rem;
+  border-radius: 2px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease-in-out;
+}
+
+.sign-form__input-text:hover {
+  border-color: #e9b372;
+}
+
+.sign-form__checkbox {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.sign-form__input-checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.25rem;
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.sign-form__checkbox-style {
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.sign-form__checkbox-style:after {
+  content: "";
+  position: absolute;
+  top: 0.3125rem;
+  left: 0.1875rem;
+  width: 0.75rem;
+  height: 0.4rem;
+  border-left: 1px solid #e9b372;
+  border-bottom: 1px solid #e9b372;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+.sign-form__input-checkbox:checked + .sign-form__checkbox-style:after {
+  opacity: 1;
+}
+
+.sign-form__checkbox-text {
+  color: #999999;
+  font-size: 0.9375rem;
+  font-weight: 300;
+}
+
+.sign-form__forget-link {
+  float: right;
+  margin-bottom: 1.875rem;
+  color: #666;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  text-decoration: underline !important;
+}
+
+.sign-form__submit {
+  width: 100%;
+  padding: 0.625rem 2rem;
+  color: #e9b372;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  background: transparent;
+  outline: none;
+  border: 2px solid #d7d7d7;
+  margin: 0 0 1.875rem;
+  cursor: pointer;
+  text-align: center;
+  -webkit-border-radius: 1.75rem;
+  -moz-border-radius: 1.75rem;
+  -ms-border-radius: 1.75rem;
+  border-radius: 1.75rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.02);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.02);
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.02);
+  -o-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.sign-form__submit:hover {
+  color: #ffffff;
+  background: #e9b372;
+  border-color: #e9b372;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 5px 14px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0 5px 14px rgba(0, 0, 0, 0.06);
+  -o-box-shadow: 0 5px 14px rgba(0, 0, 0, 0.06);
+}
+
+.sign-form__text {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
+.sign-form__social {
+  text-align: center;
+}
+.sign-form__social li {
+  display: inline-block;
+  margin: 0 0.125rem;
+}
+.sign-form__social li a {
+  background: #f7f7f7;
+  font-size: 0.9375rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.7rem;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.sign-form__social li a.facebook {
+  color: #7073e5;
+}
+.sign-form__social li a.facebook:hover {
+  color: #fff;
+  background: #7073e5;
+}
+.sign-form__social li a.google {
+  color: #e9b372;
+}
+.sign-form__social li a.google:hover {
+  color: #fff;
+  background: #e9b372;
+}
+.sign {
+  position: relative;
+  /* Show at least something when animations not supported */
+}
+.sign__area {
+  padding: 12.5rem 10.625rem;
+  background: #fff;
+  width: 45%;
+}
+.sign__slideshow {
+  position: fixed;
+  width: 60%;
+  height: 100% !important;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  background: #232323;
+}
+.sign__slideshow li span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 18s linear infinite 0s;
+}
+.sign__slideshow li:nth-child(1) span {
+  background: #111 url("../upload/ban4.jpg") center center no-repeat;
+  background-size: cover;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+  all and (-o-min-device-pixel-ratio: 3 / 2),
+  all and (min--moz-device-pixel-ratio: 1.5),
+  all and (min-device-pixel-ratio: 1.5) {
+  .sign__slideshow li:nth-child(1) span {
+    background: #111 url("../upload/ban4@2x.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .sign__slideshow li:nth-child(1) span {
+    background: #111 url("../upload/ban4@2x.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+.sign__slideshow li:nth-child(2) span {
+  background: #111 url("../upload/ban5.jpg") center center no-repeat;
+  background-size: cover;
+
+  animation-delay: 6s;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+  all and (-o-min-device-pixel-ratio: 3 / 2),
+  all and (min--moz-device-pixel-ratio: 1.5),
+  all and (min-device-pixel-ratio: 1.5) {
+  .sign__slideshow li:nth-child(2) span {
+    background: #111 url("../upload/ban5@2x.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .sign__slideshow li:nth-child(2) span {
+    background: #111 url("../upload/ban5@2x.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+.sign__slideshow li:nth-child(3) span {
+  background: #111 url("../upload/ban6.jpg") center center no-repeat;
+  background-size: cover;
+
+  animation-delay: 12s;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+  all and (-o-min-device-pixel-ratio: 3 / 2),
+  all and (min--moz-device-pixel-ratio: 1.5),
+  all and (min-device-pixel-ratio: 1.5) {
+  .sign__slideshow li:nth-child(3) span {
+    background: #111 url("../upload/ban6@2x.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .sign__slideshow li:nth-child(3) span {
+    background: #111 url("../upload/ban6@2x.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1.05);
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.1) rotate(3deg);
+  }
+  40% {
+    opacity: 0;
+    transform: scale(1.1) rotate(3deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.sign .no-cssanimations .sign__slideshow li span {
+  opacity: 1;
+}
+@media (max-width: 1580px) {
+  .sign__area {
+    padding: 12.5rem 5rem;
+  }
+}
+@media (max-width: 1400px) {
+  .sign__area {
+    padding: 10rem 3.5rem;
+  }
+}
+@media (max-width: 1199px) {
+  .sign__area {
+    padding: 8rem 2.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .sign__area {
+    padding: 6.5rem 1.875rem 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .sign__area {
+    width: 50%;
+  }
+  .sign__slideshow {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .sign__area {
+    width: 100%;
+  }
+  .sign__slideshow {
+    width: 0%;
+  }
+}
+
+/* ////////////////////////media quareis/////////////// */
 @media (max-width: 700px) {
   .counters .counter-container {
     grid-template-columns: repeat(2, 1fr);
