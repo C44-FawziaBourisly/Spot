@@ -4,20 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./img/Path 2186.png" />
-    <link rel="stylesheet" href="./glider.min.css">
+    <link rel="stylesheet" href="./glider.min.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./js/bootstrap.bundle.min.js" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk"
-    crossorigin="anonymous">
     <link
-    rel="stylesheet"
-    href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+    />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
@@ -26,117 +32,197 @@
   </head>
   <body class="explore-body">
     <div id="progressbar"></div>
-<div class="scrollPath"></div>
+    <div class="scrollPath"></div>
     <!-- -------------navbar---------------- -->
     <!-- <section class="hero"> -->
-        <!-- <section class="box-border-container__section"> -->
-            <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-drak navbar2">
-        <!-- <div class="nav-contianer"> -->
-        <a class="navbar-brand" href="./index.html"
-          ><img class="logo" src="./img/logooo.png" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active home">
-              <a class="nav-link text-dark" href="./index.html"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item dropdown text-white">
-              <a
-                class="nav-link dropdown-toggle text-dark navbar-a"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Top Rated Places
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <!-- <li class="search-bar">
-              <input class="search-bar" type="text" placeholder="Search">
-            </li> -->
+    <!-- <section class="box-border-container__section"> -->
 
-            <!-- -----------searchbar-------------- -->
+      <section class="box-border-container__section">
+        <header>
+  <nav class="navbar navbar-expand-lg navbar-dark  bg-drak navbar2">
+    <!-- <div class="nav-contianer"> -->
+    <a class="navbar-brand" href="./index.html"
+      ><img class="logo" src="./img/logooo.png" alt=""
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active home2">
+          <a class="nav-link text-dark" href="./index.html"
+            >Home <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item dropdown text-dark pages2">
+          <a
+            class="nav-link dropdown-toggle text-dark  navbar-a Pages2"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Pages
+          </a>
+          <div
+            class="dropdown-menu dropdown-content border-top"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <a class="dropdown-item drop-content" href="./exploreTrending.html">Explore Page</a>
+            <a class="dropdown-item drop-content" href="#">Details Page</a>
+            <a class="dropdown-item drop-content" href="#">More</a>
+          </div>
+        </li>
 
-            <form class="search-form">
-                <div class="search-form__input-holders">
-                    <input class="search-form__input" type="text" name="search-event" placeholder="What are you looking for?">
-                    <span class="select2 select2-container select2-container--default select2-container--below select2-container--focus" dir="ltr" style="width: 200px;">
-                        <span class="selection">
-                            <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-mder-container">
-                               <!-- <span class="select2-selection__rendered" id="select2-mder-container" title="Location?">Location?
-                               </span> -->
-                                 <span class="select2-selection__arrow" role="presentation">
-                                     <b role="presentation"></b>
-                                 </span>
-                            </span>
+        <!-- <li class="search-bar">
+          <input class="search-bar" type="text" placeholder="Search">
+        </li> -->
+
+        <!-- -----------searchbar-------------- -->
+
+        <form class="search-form">
+            <div class="search-form__input-holders">
+                <input class="search-form__input" type="text" name="search-event" placeholder="What are you looking for?">
+                <span class="select2 select2-container select2-container--default select2-container--below select2-container--focus" dir="ltr" style="width: 200px;">
+                    <span class="selection">
+                        <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-mder-container">
+                           <!-- <span class="select2-selection__rendered" id="select2-mder-container" title="Location?">Location?
+                           </span> -->
+                             <span class="select2-selection__arrow" role="presentation">
+                                 <b role="presentation"></b>
+                             </span>
                         </span>
-                        <span class="dropdown-wrapper" aria-hidden="true"></span>
                     </span>
-                    <select class="search-form__input search-form__input-location js-example-basic-multiple select2-hidden-accessible " tabindex="-1" aria-hidden="true">
-                        <option >Location?</option>
-                        <option > Kuwait City</option>
-                        <option> Hawally</option>
-                    </select>
-               
-                </div>
-            </form>
+                    <span class="dropdown-wrapper" aria-hidden="true"></span>
+                </span>
+                <select class="search-form__input search-form__input-location js-example-basic-multiple select2-hidden-accessible " tabindex="-1" aria-hidden="true">
+                    <option >Location?</option>
+                    <option > Kuwait City</option>
+                    <option> Hawally</option>
+                </select>
+           
+            </div>
+        </form>
 
-            <li class="nav-item sign-in sign-in2">
-              <a class="nav-link text-dark navbar-a" href="#">Sign in </a>
-            </li>
-            <li class="nav-item">
-              <a class="Regester nav-link text-dark navbar-a" href="#"
-                >Regester
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <li class="nav-item sign-in sign-in2">
+          <a class="nav-link text-dark navbar-a" href="#">Sign in </a>
+        </li>
+        <li class="nav-item register2">
+          <a class="Regester nav-link text-dark navbar-a" href="#"
+            >Regester
+          </a>
+        </li>
+      </ul>
     </div>
+  </nav>
+</div>
 </header>
+</section>
 
-<!-- ////////////////////////////////////////////////////////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////////// --
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////////////////////////////// --
     <!-- ///////////////////////////////////////////////////////////////////////////> -->
 
+    <section class="filterr">
+      <ul>
+        <li class="listt activve box-border box-border-title" data-filter="all">
+          All<span
+            ><img class="box-border__img" src="./img/2983736.svg" alt=""
+          /></span>
+        </li>
+        <li class="listt box-border box-border-title" data-filter="hotel">
+          Hotel<span
+            ><img class="box-border__img" src="./img/hotel.svg" alt=""
+          /></span>
+        </li>
+        <li class="listt box-border box-border-title" data-filter="restaurant">
+          Restaurant<span
+            ><img class="box-border__img" src="./img/restaurant.svg" alt=""
+          /></span>
+        </li>
+        <li class="listt box-border box-border-title" data-filter="shopping">
+          Shopping<span
+            ><img class="box-border__img" src="./img/shopping-bag.svg" alt=""
+          /></span>
+        </li>
+        <li class="listt box-border box-border-title" data-filter="saloon">
+          Saloon
+          <span
+            ><img class="box-border__img" src="./img/beauty-saloon.svg" alt=""
+          /></span>
+        </li>
+        <li class="listt box-border box-border-title" data-filter="petshop">
+          Petshop<span
+            ><img class="box-border__img" src="./img/pet-house.svg" alt=""
+          /></span>
+        </li>
+        <li class="listt box-border box-border-title" data-filter="cafe">
+          Cafe`
+          <span
+            ><img class="box-border__img" src="./img/cafe.svg" alt=""
+          /></span>
+        </li>
+      </ul>
+      <div class="product">
+   
 
-<section class="filterr">
-  <ul>
-    <li class="listt activve box-border box-border-title" data-filter="all">All<span><img class="box-border__img" src="./img/2983736.svg" alt=""></span></li>
-    <li class="listt box-border box-border-title" data-filter="mobile">Hotel<span ><img class="box-border__img" src="./img/hotel.svg" alt=""></span></li>
-    <li class="listt box-border box-border-title" data-filter="camera">Restaurant<span><img class="box-border__img" src="./img/restaurant.svg" alt=""></span></li>
-    <li class="listt box-border box-border-title" data-filter="watch">Shopping<span><img class="box-border__img" src="./img/shopping-bag.svg" alt=""></span></li>
-    <li class="listt box-border box-border-title" data-filter="shoe">Saloon <span><img  class="box-border__img" src="./img/beauty-saloon.svg" alt=""></span></li>
-    <li class="listt box-border box-border-title" data-filter="haedphone">Petshop<span><img class="box-border__img" src="./img/pet-house.svg" alt=""></span></li>
-    <li class="listt box-border box-border-title" data-filter="haedphonee">Cafe` <span><img class="box-border__img" src="./img/cafe.svg" alt=""></span></li>
+        <div class="card  itemBox hotel" ">
+          <img class="card-img-top" src="./img/tobys.JPG" alt="Card image cap ">
+          <div class="card-body">
+            <h5 class="card-title">TOBY'S ESTATE</h5>
+            <p class="card-text">Cafe` 
+              <i class="fas fa-star star"></i>
+              <i class="fas fa-star star"></i>
+              <i class="fas fa-star star"></i>
+              <i class="far fa-star star"></i>
+              <i class="far fa-star star"></i>
+            </p>
+           <a href="./tobys.html"> <button class="img-trans__btn card-btn" aria-hidden="true" >Explore<i class="fa fa-caret-right"></i></button></a>
+          </div>
+        </div>
 
-  </ul>
-  <div class="product">
-    <div class="itemBox mobile"><img src="./img/profile-img.png" alt="" ></div>
+        <div class="card  itemBox hotel" ">
+          <img class="card-img-top" src="./img/tobys.JPG" alt="Card image cap ">
+          <div class="card-body">
+            <h5 class="card-title">TOBY'S ESTATE</h5>
+            <p class="card-text">Cafe` 
+              <i class="fas fa-star star"></i>
+              <i class="fas fa-star star"></i>
+              <i class="fas fa-star star"></i>
+              <i class="far fa-star star"></i>
+              <i class="far fa-star star"></i>
+            </p>
+           <a href="./tobys.html"> <button class="img-trans__btn card-btn" aria-hidden="true" >Explore<i class="fa fa-caret-right"></i></button></a>
+          </div>
+        </div>
+
+
+        <!-- <div class="card card1 itemBox hotel">
+      <img class="card-img-top" src="./img/aven.png" >
+      <div class="card-body">
+        <h5 class="card-title">TOBY'S ESTATE</h5>
+        <p class="card-text">Cafe` 
+          <i class="fas fa-star star"></i>
+          <i class="fas fa-star star"></i>
+          <i class="fas fa-star star"></i>
+          <i class="fas fa-star star"></i>
+          <i class="fas fa-star star"></i>
+        </p>
+       <a href="./tobys.html"> <button class="img-trans__btn card-btn" aria-hidden="true" >Explore<i class="fa fa-caret-right"></i></button></a>
+      </div>
+    </div> -->
+        <!-- <div class="itemBox mobile"><img src="./img/profile-img.png" alt="" ></div>
     <div class="itemBox camera"><img src="./img/murouj.png" alt="" ></div>
     <div class="itemBox watch"><img src="./img/tobys.JPG" alt="" ></div>
     <div class="itemBox shoe"><img src="./img/cofee-w1280-636944539207714228.jpg" alt="" ></div>
@@ -158,13 +244,11 @@
     <div class="itemBox haedphone"><img src="./img/ouglj.png" alt="" ></div>
     <div class="itemBox haedphonee"><img src="./img/tobys.JPG" alt="" ></div>
     <div class="itemBox shoe"><img src="./img/cofee-w1280-636944539207714228.jpg" alt="" ></div>
-    <div class="itemBox haedphonee"><img src="./img/ouglj.png" alt="" ></div>
-  </div>
-</section>
+    <div class="itemBox haedphonee"><img src="./img/ouglj.png" alt="" ></div> -->
+      </div>
+    </section>
 
-
-
-          <!-- <div class="box-border-container" id="myBtnContainer">
+    <!-- <div class="box-border-container" id="myBtnContainer">
 
             <div class="box-border btnn activve" onclick="filterSelection('all')">
                 <h2 class="box-border-title " >All</h2>
@@ -210,66 +294,91 @@
 
         </div> -->
 
-
-
-      
-
     <!-- </section> -->
-   <!-- <button onclick="bbtn()">
-  test</button> -->
+
+
+    <footer class="footer explore-footer">
+      <div class="footer-container">
+    <div class="footer-div1">
+      <img class="footer-logo" src="./img/logo-white.png" alt="">
+      <p class="footer-p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia id amet dignissimos? Doloribus eius quaerat tempora nobis nesciunt excepturi eaque.</p>
+    </div>
     
-  
+    
+    <div class="footer-div1">
+      <h2 class="footer-h2">Keep in Touch</h2>
+      <p class="footer-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <input placeholder="Enter your Email" class="footer-input" type="text"><i class="far fa-arrow-alt-circle-right input-arrow"></i>
+    </div>
+    
+    <div class="footer-div1 div3">
+      <h2 class="footer-h2">Contact Info</h2>
+      <p class="footer-p1">Contact this Email for Any Questions<br>fbourisly25@gmail.com</p>
+      
+    </div>
+    
+    </div>
+    <div class="footer-container2">
+      <p class="copy">&copy; Copyright 2020 - All Rights Reserved</p>
+      <span class="social-span">
+       <a href="https://github.com/C44-FawziaBourisly"><i class="fab fa-github  social"></i></a> 
+        <a href="https://www.instagram.com/joincoded/?hl=en"><i class="fab fa-instagram  social"></i></a>
+       <a href="https://twitter.com/joincoded?s=21"> <i class="fab fa-twitter  social"></i></a>
+      </span>
+    </div>
+    </footer>
+    
 
     <!-- <script src="./glider.min.js"></script> -->
     <!-- jquery cdn link -->
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
-  <!-- isotope js link -->
-  <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
+    <!-- isotope js link -->
+    <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
     <script src="./script.js"></script>
 
-<!--   
+    <!--   
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script> -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-<!-- <script src="/__/firebase/7.24.0/firebase-app.js"></script> -->
+    <!-- <script src="/__/firebase/7.24.0/firebase-app.js"></script> -->
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<!-- <script src="/__/firebase/7.24.0/firebase-analytics.js"></script> -->
+    <!-- <script src="/__/firebase/7.24.0/firebase-analytics.js"></script> -->
 
-<!-- Initialize Firebase -->
-<!-- <script src="/__/firebase/init.js"></script> -->
+    <!-- Initialize Firebase -->
+    <!-- <script src="/__/firebase/init.js"></script> -->
 
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
 
-
-<script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
-
-  <script type="text/javascript">
-  $(document).ready(function(){
-    $('.listt').click(function(){
-      const value =  $(this).attr('data-filter');
-      if (value == 'all'){
-        $('.itemBox').show('1000');
-      }
-      else{
-        $('.itemBox').not('.'+value).hide('1000');
-        $('.itemBox').filter('.'+value).show('1000');
-
-      }
-    })
-    $('.listt').click(function(){
-      $(this).addClass('activve').siblings().removeClass('activve');
-    })
-  })
-  
-  </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".listt").click(function () {
+          const value = $(this).attr("data-filter");
+          if (value == "all") {
+            $(".itemBox").show("1000");
+          } else {
+            $(".itemBox")
+              .not("." + value)
+              .hide("1000");
+            $(".itemBox")
+              .filter("." + value)
+              .show("1000");
+          }
+        });
+        $(".listt").click(function () {
+          $(this).addClass("activve").siblings().removeClass("activve");
+        });
+      });
+    </script>
   </body>
-</html> 
+</html>

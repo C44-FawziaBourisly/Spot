@@ -44,6 +44,12 @@ body {
 
 /* ---- button ---- */
 
+.wide-pic {
+  background-size: cover;
+  min-height: 602px;
+  max-height: 602px;
+}
+
 .button {
   display: inline-block;
   padding: 0.5em 1em;
@@ -311,11 +317,27 @@ form {
   margin-right: 20px;
 }
 .sign-in2 {
-  margin-left: 8rem;
+  margin-left: 13rem;
+  margin-top: 2px;
+  margin-right: 20px;
 }
+.register2 {
+  margin-top: 2px;
+}
+
 .home {
   margin-right: 20px;
   margin-left: 10px;
+}
+
+.home2 {
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.pages2 {
+  margin-top: 6px;
 }
 .tittle {
   text-align: center;
@@ -327,6 +349,16 @@ form {
 .tittle1 {
   font-size: 55px;
   margin-bottom: 70px;
+}
+.gallery {
+  max-width: 1120px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-img {
+  width: 230px;
+  height: 230px;
 }
 .search-btn {
   width: 150px;
@@ -449,8 +481,8 @@ form {
 }
 
 .search-form {
-  margin-left: 5rem;
-  margin-top: 6px;
+  margin-left: 7rem;
+  margin-bottom: 1px;
 }
 .search-form__input-holders {
   display: inline-block;
@@ -576,6 +608,7 @@ figure {
 .btn-default:hover {
   color: #e9b372;
   background: #fff;
+  text-decoration: none;
 }
 
 .btn-default-red {
@@ -791,6 +824,8 @@ figure {
 }
 
 .listing-detail__scroll-menu {
+  margin-top: 10px;
+  height: 44px;
   border-bottom: 1px solid #ebebeb;
 }
 .listing-detail__scroll-menu li {
@@ -808,6 +843,7 @@ figure {
 .listing-detail__scroll-menu li a:hover {
   color: #363636;
   border-bottom: 1px solid #e9b372;
+  text-decoration: none;
 }
 
 .listing-detail__content-box {
@@ -975,16 +1011,19 @@ figure {
 .reviews-list__item-helpful:hover {
   color: #363636;
   border-color: #3399ff;
+  text-decoration: none;
 }
 .reviews-list__item-helpful.active i,
 .reviews-list__item-helpful:hover i {
   color: #3399ff;
+  text-decoration: none;
 }
 .reviews-list__item-helpful.active span,
 .reviews-list__item-helpful:hover span {
   border-left-color: #3399ff;
   background: #3399ff;
   color: #fff;
+  text-decoration: none;
 }
 
 .wrapper {
@@ -1175,6 +1214,7 @@ figure {
 
 .filterr ul {
   display: flex;
+  justify-content: space-around;
   margin-bottom: 30px;
   margin-top: 25px;
 }
@@ -1192,12 +1232,23 @@ figure {
   border: none;
 }
 
+.itemBox {
+  border: 1px solid rgb(92, 92, 92);
+  box-shadow: rgba(0, 0, 0, 0.363);
+  border-radius: 10px;
+  width: 500px;
+  margin-left: 30px;
+}
+
 .product {
   display: flex;
   flex-wrap: wrap;
 }
 
-.product .itemBox {
+.explore-footer {
+  margin-top: 200px;
+}
+/* .product .itemBox {
   position: relative;
   width: 300px;
   height: 300px;
@@ -1210,7 +1261,7 @@ figure {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 .hero4 {
   background-image: url("http://nunforest.com/triptip-demo/images/bg2.png");
   margin-top: 120px;
@@ -1232,9 +1283,15 @@ figure {
   display: flex;
   flex-direction: row;
 }
+
+.explore-card {
+  width: 14rem;
+  box-shadow: #c7c7c7;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
 .card {
   width: 14rem;
-
   box-shadow: #c7c7c7;
   border-radius: 30px;
   margin-bottom: 30px;
@@ -1245,8 +1302,64 @@ figure {
 .card-img-top {
   height: 11rem;
 }
+/* .card-img-top2 {
+  width: 30px;
+} */
+.itemBox {
+  max-width: 305px;
+  background: white;
+}
 .star {
   color: #e9b372;
+}
+
+.stars {
+  margin-top: 15px;
+}
+.stars input {
+  position: absolute;
+  left: -999999px;
+}
+
+.stars a {
+  display: inline-block;
+  padding-right: 4px;
+  text-decoration: none;
+  margin: 0;
+}
+
+.stars a:after {
+  position: relative;
+  font-size: 18px;
+  font-family: "FontAwesome", serif;
+  display: block;
+  content: "\f005";
+  color: #9e9e9e;
+}
+
+span {
+  font-size: 0; /* trick to remove inline-element's margin */
+}
+
+.stars a:hover ~ a:after {
+  color: #9e9e9e !important;
+}
+span.active a.active ~ a:after {
+  color: #9e9e9e;
+}
+
+.spann:hover a:after {
+  color: #e9b372 !important;
+}
+
+span.active a:after,
+.stars a.active:after {
+  color: #e9b372;
+}
+
+.mapp {
+  margin-top: -1550px;
+  margin-left: 25px;
 }
 .card-title {
   letter-spacing: 3px;
@@ -1267,7 +1380,7 @@ figure {
 }
 .viewall-link:hover {
   color: #e9b372;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .footer {
@@ -1325,17 +1438,16 @@ figure {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.social {
+/* .social {
   color: rgb(145, 145, 145);
   padding-right: 10px;
-  /* transition: 0.5s; */
 }
 .social:hover {
   color: white;
 }
 .social-span {
   padding-left: 55rem;
-}
+} */
 .i-counter {
   color: white;
 }
@@ -1347,6 +1459,10 @@ figure {
   color: white;
 }
 
+.sidebar {
+  margin-left: 46rem;
+  margin-bottom: 60rem;
+}
 .sidenav {
   height: 100%;
   width: 185px;
@@ -1419,6 +1535,29 @@ figure {
   box-shadow: 0 5px 14px rgba(0, 0, 0, 0.06);
 }
 
+.contact-form__upload-btn {
+  text-align: right;
+  position: relative;
+}
+.contact-form__upload-btn span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.25rem 0.625rem;
+  color: #999999;
+  font-size: 0.875rem;
+  font-weight: 200;
+  border: 1px solid #cccccc;
+  border-radius: 1.25rem;
+  transition: all 0.2s ease-in-out;
+}
+.contact-form__upload-btn span i {
+  font-size: 1rem;
+  float: left;
+  margin-right: 0.25rem;
+  margin-top: 0.125rem;
+}
+
 .contact-form__input-file {
   display: inline-block;
   width: 136px;
@@ -1432,9 +1571,11 @@ figure {
   border-color: #e9b372;
 }
 
-/* .sidenav a:hover {
-  color: #f1f1f1;
-} */
+.contact-form__rate {
+  color: #555555;
+  margin-top: 8px;
+}
+
 .contact-form__rate-bx i {
   transition: all 0.2s ease;
 }

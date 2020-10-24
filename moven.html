@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/Path 2186.png" />
+    <link rel="stylesheet" href="./glider.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./js/bootstrap.bundle.min.js" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+  />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Spot | Explore Kuwait City</title>
+  </head>
+  <body>
+    <div id="progressbar"></div>
+<div class="scrollPath"></div>
+    <!-- -------------navbar---------------- -->
+    <!-- <section class="hero"> -->
+        <section class="box-border-container__section">
+            <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-drak navbar2">
+        <!-- <div class="nav-contianer"> -->
+        <a class="navbar-brand" href="./index.html"
+          ><img class="logo" src="./img/logooo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active home2">
+              <a class="nav-link text-dark" href="./index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown text-dark pages2">
+              <a
+                class="nav-link dropdown-toggle text-dark  navbar-a Pages2"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <div
+                class="dropdown-menu dropdown-content border-top"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item drop-content" href="./exploreTrending.html">Explore Page</a>
+                <a class="dropdown-item drop-content" href="#">Details Page</a>
+                <a class="dropdown-item drop-content" href="#">More</a>
+              </div>
+            </li>
+
+            <!-- <li class="search-bar">
+              <input class="search-bar" type="text" placeholder="Search">
+            </li> -->
+
+            <!-- -----------searchbar-------------- -->
+
+            <form class="search-form">
+                <div class="search-form__input-holders">
+                    <input class="search-form__input" type="text" name="search-event" placeholder="What are you looking for?">
+                    <span class="select2 select2-container select2-container--default select2-container--below select2-container--focus" dir="ltr" style="width: 200px;">
+                        <span class="selection">
+                            <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-mder-container">
+                               <!-- <span class="select2-selection__rendered" id="select2-mder-container" title="Location?">Location?
+                               </span> -->
+                                 <span class="select2-selection__arrow" role="presentation">
+                                     <b role="presentation"></b>
+                                 </span>
+                            </span>
+                        </span>
+                        <span class="dropdown-wrapper" aria-hidden="true"></span>
+                    </span>
+                    <select class="search-form__input search-form__input-location js-example-basic-multiple select2-hidden-accessible " tabindex="-1" aria-hidden="true">
+                        <option >Location?</option>
+                        <option > Kuwait City</option>
+                        <option> Hawally</option>
+                    </select>
+               
+                </div>
+            </form>
+
+            <li class="nav-item sign-in sign-in2">
+              <a class="nav-link text-dark navbar-a" href="#">Sign in </a>
+            </li>
+            <li class="nav-item register2">
+              <a class="Regester nav-link text-dark navbar-a" href="#"
+                >Regester
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+</header>
+</section>
+
+
+
+
+<section class="tobys-div">
+  <div class="listing-detail__gal">
+    <picture>
+     <img class="wide-pic" src="./img/movv.png"  alt="" >
+      
+      
+    </picture>
+    <div class="listing-detail__gal-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="listing-detail__rate">10 <span>/ 10</span></p>
+            <h1 class="listing-detail__title">Movenpick Hotel and Resort</h1>
+            <p class="listing-detail__address"><i class="fa fa-map-marker"></i>Salmiya 22084 Kuwait, 13008</p>
+          </div> 
+          <div class="col-md-6">
+            <div class="listing-detail__buttons">
+              <a class="btn-default navigate-btn " href="#leave-review">
+                <i class="fas fa-pencil-alt"></i>
+                Write a Review
+              </a>
+              <a class="btn-default" href="#">
+                <i class="far fa-heart"></i>
+                Save
+              </a>
+              <a class="btn-default" href="#">
+                <i class="fas fa-share-alt"></i>
+                Share
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+  <div class="listing-detail__scroll-menu-box">
+    <div class="container">
+      <ul class="listing-detail__scroll-menu navigate-section">
+        <li>
+          <a class="active" href="#overview-box">Overview</a>
+        </li>
+        <li>
+          <a href="#gallery-box">Gallery</a>
+          
+        </li>
+        
+        <li>
+          <a href="#tips-reviews-box">Tips and Reviews</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<!-- /////////////////////////////////////
+///////////////////////////////////
+/////////////////////////////////////////
+/////////////////////////////
+///////////////////////////////////// -->
+
+  <div class="listing-detail__content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="listing-detail__content-box">
+
+            <!-- overview box -->
+            <div class="listing-detail__overview" id="overview-box">
+              <h2 class="listing-detail__content-title">Overview</h2>
+              <p class="listing-detail__content-description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+              </p>
+            </div>
+
+            <!-- gallery-box -->
+            <div class="listing-detail__gallery" id="gallery-box">
+              <h2 class="listing-detail__content-title">Gallery</h2>
+    <div class="gallery">
+      <img class="gallery-img" src="./img/moven1.png" alt="">
+      <img class="gallery-img" src="./img/moven2.png" alt="">
+      <img class="gallery-img" src="./img/moven3.png" alt="">
+    </div>
+
+              </div>
+            </div>
+
+            <!-- tips & reviews-box -->
+            <div class="listing-detail__reviews" id="tips-reviews-box">
+              <h2 class="listing-detail__content-title">
+                Tips &amp; Reviews 
+                <a href="#leave-review" class="navigate-btn"><i class="la la-pencil"></i> Write a Review</a>
+              </h2>
+              <div class="listing-detail__reviews-box">
+
+                <!-- reviews list -->
+                <ul class="reviews-list">
+
+                  <li class="reviews-list__item">
+                    <div class="reviews-list__item-box">
+                      <img class="reviews-list__item-image" src="./img/profile-img.png" alt="">
+                      <div class="reviews-list__item-content">
+                        <h3 class="reviews-list__item-title">
+                          Philip W
+                        </h3>
+                        <span class="reviews-list__item-location">
+                          Ormskirk, United Kingdom
+                        </span>
+                        <p class="reviews-list__item-date">
+                          Posted October 7, 2018
+                          <span class="reviews-list__item-rating">8.0</span>
+                        </p>
+                        <h3 class="reviews-list__item-title">
+                          Good Service but..
+                        </h3>
+                        <p class="reviews-list__item-description">
+                          Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+                        </p>
+                        <a class="reviews-list__item-helpful" href="#">
+                          <i class="la la-thumbs-o-up"></i>
+                          Helpfull review
+                          <span>8</span>
+                        </a>
+                        <a class="reviews-list__item-reply" href="#">
+                          <!-- <i class="fas fa-reply"></i> -->
+                          Reply
+                        </a>
+                      </div>	
+                    </div>
+                  </li>
+
+                  <li class="reviews-list__item">
+                    <div class="reviews-list__item-box">
+                      <img class="reviews-list__item-image" src="./img/profile-img.png" alt="">
+                      <div class="reviews-list__item-content">
+                        <h3 class="reviews-list__item-title">
+                          Jury
+                        </h3>
+                        <span class="reviews-list__item-location">
+                          Sopot, Poland
+                        </span>
+                        <p class="reviews-list__item-date">
+                          Posted October 1, 2018
+                          <span class="reviews-list__item-rating average-rat">7.0</span>
+                        </p>
+                        <h3 class="reviews-list__item-title">
+                          Nice!
+                        </h3>
+                        <p class="reviews-list__item-description">
+                          Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+                        </p>
+                        <a class="reviews-list__item-helpful active" href="#">
+                          <i class="la la-thumbs-o-up"></i>
+                          Helpfull review
+                          <span>2</span>
+                        </a>
+                        <a class="reviews-list__item-reply" href="#">
+                          <i class="la la-mail-forward"></i>
+                          Reply
+                        </a>
+                      </div>	
+                    </div>
+                  </li>
+
+                  <li class="reviews-list__item">
+                    <div class="reviews-list__item-box">
+                      <img class="reviews-list__item-image" src="./img/profile-img.png" alt="">
+                      <div class="reviews-list__item-content">
+                        <h3 class="reviews-list__item-title">
+                          Samantha B
+                        </h3>
+                        <span class="reviews-list__item-location">
+                          Viena, Austria
+                        </span>
+                        <p class="reviews-list__item-date">
+                          Posted October 1, 2018
+                          <span class="reviews-list__item-rating low-rat">2.0</span>
+                        </p>
+                        <h3 class="reviews-list__item-title">
+                          Horrible!
+                        </h3>
+                        <p class="reviews-list__item-description">
+                          Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. 
+                        </p>
+                        <a class="reviews-list__item-helpful" href="#">
+                          <i class="la la-thumbs-o-up"></i>
+                          Helpfull review
+                          <span>0</span>
+                        </a>
+                        <a class="reviews-list__item-reply" href="#">
+                          <i class="la la-mail-forward"></i>
+                          Reply
+                        </a>
+                      </div>	
+                    </div>
+
+                    <ul class="reviews-list with-depth">
+
+                      <li class="reviews-list__item">
+                        <div class="reviews-list__item-box">
+                          <img class="reviews-list__item-image" src="./img/profile-img.png" alt="">
+                          <div class="reviews-list__item-content">
+                            <h3 class="reviews-list__item-title">
+                              Mr Demarest
+                            </h3>
+                            <span class="reviews-list__item-location">
+                              Austria
+                            </span>
+                            <p class="reviews-list__item-date">
+                              Posted October 1, 2018
+                            </p>
+                            <p class="reviews-list__item-description">
+                              Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
+                            </p>
+                            <a class="reviews-list__item-helpful" href="#">
+                              <i class="la la-thumbs-o-up"></i>
+                              Helpfull review
+                              <span>0</span>
+                            </a>
+                            <a class="reviews-list__item-reply" href="#">
+                              <i class="la la-mail-forward"></i>
+                              Reply
+                            </a>
+                          </div>	
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="reviews-list__item">
+                    <div class="reviews-list__item-box">
+                      <img class="reviews-list__item-image" src="./img/profile-img.png" alt="">
+                      <div class="reviews-list__item-content">
+                        <h3 class="reviews-list__item-title">
+                          Andreas
+                        </h3>
+                        <span class="reviews-list__item-location">
+                          Paphos, Cyprus
+                        </span>
+                        <p class="reviews-list__item-date">
+                          Posted October 1, 2018
+                          <span class="reviews-list__item-rating solid-rat">6.0</span>
+                        </p>
+                        <h3 class="reviews-list__item-title">
+                          Lunch for two!
+                        </h3>
+                        <p class="reviews-list__item-description">
+                          Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+                        </p>
+                        <a class="reviews-list__item-helpful" href="#">
+                          <i class="la la-thumbs-o-up"></i>
+                          Helpfull review
+                          <span>1</span>
+                        </a>
+                        <a class="reviews-list__item-reply" href="#">
+                          <i class="la la-mail-forward"></i>
+                          Reply
+                        </a>
+                      </div>	
+                    </div>
+                  </li>
+
+                </ul>
+                <!-- reviews-list -->
+
+                <!-- Contact form module -->
+                <div class="contact-form" id="leave-review">
+                  <h2 class="contact-form__title">
+                    Rate us and Write a Review
+                  </h2>
+                  <div class="row">
+
+                    <div class="col-md-6">
+                      <p class="contact-form__rate">
+                        Your rating for this listing:
+                      </p>
+                      <p class="contact-form__rate-bx stars">
+                        <span class="spann">
+                          <a class="star-1" >1</a>
+                          <a class="star-2" >2</a>
+                          <a class="star-3" >3</a>
+                          <a class="star-4" >4</a>
+                          <a class="star-5" >5</a>
+                          <a class="star-6" >6</a>
+                          <a class="star-7" >7</a>
+                          <a class="star-8" >8</a>
+                          <a class="star-9" >9</a>
+                          <a class="star-10" >10</a>
+                        </span>
+                    
+                      </p>
+                      <p class="contact-form__rate-bx-show">
+                        <span class="rate-actual">0</span> / 10
+                      </p>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="contact-form__upload-btn">
+                        <input class="contact-form__input-file" type="file" name="photo-upload" id="photo-upload">
+                        <span>
+                          <i class="la la-cloud-upload"></i>
+                          Upload Photos
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="contact-form__input-text" type="text" name="name" id="name" placeholder="Name:">
+                    </div>
+                    <div class="col-md-6">
+                      <input class="contact-form__input-text" type="text" name="mail" id="mail" placeholder="Email:">
+                    </div>
+                  </div>
+                  <textarea class="contact-form__textarea" name="comment" id="comment" placeholder="Comment"></textarea>
+                  <input class="contact-form__submit" type="submit" name="submit-contact" id="submit_contact" value="Submit Review">
+                </div>
+                <!-- End Contact form module -->
+
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="mapp">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3478.739357524297!2d48.0888199!3d29.319320299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf7607ea1a7fa7%3A0x85a6da1802abea43!2sM%C3%B6venpick%20Hotel%20And%20Resort%20Al%20Bidaa%20Kuwait!5e0!3m2!1sen!2skw!4v1603556097154!5m2!1sen!2skw" frameborder="0" style="border:0; width: 400px; height: 800px; margin-left: 48rem; margin-top: -1250rem;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3480.7260604825424!2d48.0223419!3d29.
+            261004399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9ee7154991e7%3A0x796bd7d51a4b75db!2sMUROUJ!5e0!3m2!1sen!2skw!4v1603551786941!5m2!1sen!2skw"
+            frameborder="0" style="border:0; width: 400px; height: 800px; margin-left: 48rem; margin-top: -1250rem;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+            
+  </div>
+          
+        </div>
+
+       
+        <!-- <div class="col-lg-4"> -->
+          <!-- <div class="sidebar"> -->
+
+          <!-- <div id="map"> -->
+           
+            <!-- <div>
+              <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=29.292478026016745~47.8900660522461&lvl=9&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+              </iframe>
+              <div style="white-space: nowrap; text-align: center; width: 500px; padding: 6px 0;">
+                 <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=29.292478026016745~47.8900660522461&amp;sty=r&amp;lvl=9&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
+                 <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=29.292478026016745~47.8900660522461&amp;sty=r&amp;lvl=9&amp;rtp=~pos.29.292478026016745_47.8900660522461____&amp;FORM=MBEDLD">Get Directions</a>
+             </div>
+         </div> -->
+          <!-- </div> -->
+           
+
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+    
+ 
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+<div class="footer-div1">
+  <img class="footer-logo" src="./img/logo-white.png" alt="">
+  <p class="footer-p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia id amet dignissimos? Doloribus eius quaerat tempora nobis nesciunt excepturi eaque.</p>
+</div>
+
+
+<div class="footer-div1">
+  <h2 class="footer-h2">Keep in Touch</h2>
+  <p class="footer-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <input placeholder="Enter your Email" class="footer-input" type="text"><i class="far fa-arrow-alt-circle-right input-arrow"></i>
+</div>
+
+<div class="footer-div1 div3">
+  <h2 class="footer-h2">Contact Info</h2>
+  <p class="footer-p1">Contact this Email for Any Questions<br>fbourisly25@gmail.com</p>
+  
+</div>
+
+</div>
+<div class="footer-container2">
+  <p class="copy">&copy; Copyright 2020 - All Rights Reserved</p>
+  <span class="social-span">
+   <a href="https://github.com/C44-FawziaBourisly"><i class="fab fa-github  social"></i></a> 
+    <a href="https://www.instagram.com/joincoded/?hl=en"><i class="fab fa-instagram  social"></i></a>
+   <a href="https://twitter.com/joincoded?s=21"> <i class="fab fa-twitter  social"></i></a>
+  </span>
+</div>
+</footer>
+
+
+
+<script src="./glider.min.js"></script>
+<script>
+
+</script>
+<script src="./script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+ $('.stars a').on('click', function(){
+  $('.stars span, .stars a').removeClass('active');
+
+  $(this).addClass('active');
+  $('.stars span').addClass('active');
+});
+</script>
+<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyBmKr1H2niJMyTdjgpJ0er_FIQkZbjvxq8&callback=initMap"></script> -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- <script src="/__/firebase/7.24.0/firebase-app.js"></script> -->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#available-libraries -->
+<!-- <script src="/__/firebase/7.24.0/firebase-analytics.js"></script> -->
+
+<!-- Initialize Firebase -->
+<!-- <script src="/__/firebase/init.js"></script> -->
+</body>
+</html> 
+

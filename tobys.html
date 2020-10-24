@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk"
     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
     rel="stylesheet"
     href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
@@ -49,14 +50,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item active home">
+            <li class="nav-item active home2">
               <a class="nav-link text-dark" href="./index.html"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
-            <li class="nav-item dropdown text-white">
+            <li class="nav-item dropdown text-dark pages2">
               <a
-                class="nav-link dropdown-toggle text-dark navbar-a"
+                class="nav-link dropdown-toggle text-dark  navbar-a Pages2"
                 href="#"
                 id="navbarDropdownMenuLink"
                 role="button"
@@ -64,17 +65,18 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Top Rated Places
+                Pages
               </a>
               <div
-                class="dropdown-menu"
+                class="dropdown-menu dropdown-content border-top"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item drop-content" href="./exploreTrending.html">Explore Page</a>
+                <a class="dropdown-item drop-content" href="#">Details Page</a>
+                <a class="dropdown-item drop-content" href="#">More</a>
               </div>
             </li>
+
             <!-- <li class="search-bar">
               <input class="search-bar" type="text" placeholder="Search">
             </li> -->
@@ -108,7 +110,7 @@
             <li class="nav-item sign-in sign-in2">
               <a class="nav-link text-dark navbar-a" href="#">Sign in </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item register2">
               <a class="Regester nav-link text-dark navbar-a" href="#"
                 >Regester
               </a>
@@ -126,7 +128,7 @@
 <section class="tobys-div">
   <div class="listing-detail__gal">
     <picture>
-     <img src="./img/tobyys.jpg"  alt="" style="max-height: 550px">
+     <img class="wide-pic" src="./img/tobyys.jpg"  alt="">
       
       
     </picture>
@@ -141,15 +143,15 @@
           <div class="col-md-6">
             <div class="listing-detail__buttons">
               <a class="btn-default navigate-btn " href="#leave-review">
-                <i class="la la-pencil" aria-hidden="true"></i>
+                <i class="fas fa-pencil-alt"></i>
                 Write a Review
               </a>
               <a class="btn-default" href="#">
-                <i class="la la-heart-o" aria-hidden="true"></i>
+                <i class="far fa-heart"></i>
                 Save
               </a>
               <a class="btn-default" href="#">
-                <i class="la la-share-alt" aria-hidden="true"></i>
+                <i class="fas fa-share-alt"></i>
                 Share
               </a>
             </div>
@@ -168,7 +170,9 @@
         </li>
         <li>
           <a href="#gallery-box">Gallery</a>
+          
         </li>
+        
         <li>
           <a href="#tips-reviews-box">Tips and Reviews</a>
         </li>
@@ -199,34 +203,12 @@
             <!-- gallery-box -->
             <div class="listing-detail__gallery" id="gallery-box">
               <h2 class="listing-detail__content-title">Gallery</h2>
-              <div class="listing-detail__gallery-inner owl-wrapper">
-                <div class="owl-carousel owl-theme" data-num="4" style="opacity: 1; display: block;">
-                
-                  <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 2220px; left: 0px; display: block; transition: all 800ms ease 0s; transform: translate3d(-185px, 0px, 0px);"><div class="owl-item" style="width: 185px;"><div class="item">
-                    <img src="upload/g1.jpg" alt="">
-                  </div></div><div class="owl-item" style="width: 185px;"><div class="item">
-                    <img src="upload/g2.jpg" alt="">
-                  </div></div><div class="owl-item" style="width: 185px;"><div class="item">
-                    <img src="upload/g3.jpg" alt="">
-                  </div></div><div class="owl-item" style="width: 185px;"><div class="item">
-                    <img src="upload/g4.jpg" alt="">
-                  </div></div><div class="owl-item" style="width: 185px;"><div class="item">
-                    <img src="upload/g5.jpg" alt="">
-                  </div></div><div class="owl-item" style="width: 185px;"><div class="item">
-                    <img src="upload/g6.jpg" alt="">
-                  </div></div></div></div>
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
+    <div class="gallery">
+      <img class="gallery-img" src="/img/tb1.png" alt="">
+      <img class="gallery-img" src="./img/tb2.png" alt="">
+      <img class="gallery-img" src="./img/tb3.png" alt="">
+    </div>
 
-                <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div><div class="owl-buttons"><div class="owl-prev"></div><div class="owl-next"></div></div></div></div>
               </div>
             </div>
 
@@ -267,7 +249,7 @@
                           <span>8</span>
                         </a>
                         <a class="reviews-list__item-reply" href="#">
-                          <i class="la la-mail-forward"></i>
+                          <!-- <i class="fas fa-reply"></i> -->
                           Reply
                         </a>
                       </div>	
@@ -419,27 +401,20 @@
                       <p class="contact-form__rate">
                         Your rating for this listing:
                       </p>
-                      <p class="contact-form__rate-bx">
-                        <!-- <input type="radio" name="rate" id="rate-10"> -->
-                       <i for="rate-10" class="fas fa-star" ></i>
-                       <!-- <input type="radio" name="rate" id="rate-9"> -->
-                       <i for="rate-9" class="fas fa-star" ></i>
-                       <!-- <input type="radio" name="rate" id="rate-8"> -->
-                       <i for="rate-8" class="fas fa-star" ></i>
-                       <!-- <input type="radio" name="rate" id="rate-7"> -->
-                       <i for="rate-7" class="fas fa-star" ></i>
-                       <!-- <input type="radio" name="rate" id="rate-6"> -->
-                       <i for="rate-6" class="fas fa-star" ></i>
-                       <!-- <input type="radio" name="rate" id="rate-5"> -->
-                       <i for="rate-5" class="fas fa-star" ></i>
-                       <!-- <input type="radio" name="rate" id="rate-4"> -->
-                       <i for="rate-4" class="fas fa-star" ></i>
-                       <!-- <input type="radio" name="rate" id="rate-3"> -->
-                       <i for="rate-3" class="fas fa-star" ></i>
-                       <!-- <input type="radio" name="rate" id="rate-2"> -->
-                       <i for="rate-2" class="fas fa-star" ></i>
-                       <!-- <input type="radio" name="rate" id="rate-1"> -->
-                       <i for="rate-1" class="fas fa-star" ></i>
+                      <p class="contact-form__rate-bx stars">
+                        <span class="spann">
+                          <a class="star-1" >1</a>
+                          <a class="star-2" >2</a>
+                          <a class="star-3" >3</a>
+                          <a class="star-4" >4</a>
+                          <a class="star-5" >5</a>
+                          <a class="star-6" >6</a>
+                          <a class="star-7" >7</a>
+                          <a class="star-8" >8</a>
+                          <a class="star-9" >9</a>
+                          <a class="star-10" >10</a>
+                        </span>
+                    
                       </p>
                       <p class="contact-form__rate-bx-show">
                         <span class="rate-actual">0</span> / 10
@@ -469,28 +444,40 @@
                 </div>
                 <!-- End Contact form module -->
 
+
+
               </div>
 
             </div>
 
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="sidebar">
 
-          <div id="map">
-            <div>
+          <div class="mapp">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.8295523230513!2d47.97587571457726!3d29.375279556827717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf84eb8fe205fb%3A0x5012ebf8de101514!2sToby
+            &#39;s%20Estate%20Coffee%20Roasters!5e0!3m2!1sen!2skw!4v1603516361250!5m2!1sen!2skw" 
+             frameborder="0" style="border:0; width: 400px; height: 800px; margin-left: 48rem; margin-top: -1250rem;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+          
+        </div>
+
+       
+        <!-- <div class="col-lg-4"> -->
+          <!-- <div class="sidebar"> -->
+
+          <!-- <div id="map"> -->
+           
+            <!-- <div>
               <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=29.292478026016745~47.8900660522461&lvl=9&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
               </iframe>
               <div style="white-space: nowrap; text-align: center; width: 500px; padding: 6px 0;">
                  <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=29.292478026016745~47.8900660522461&amp;sty=r&amp;lvl=9&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
                  <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=29.292478026016745~47.8900660522461&amp;sty=r&amp;lvl=9&amp;rtp=~pos.29.292478026016745_47.8900660522461____&amp;FORM=MBEDLD">Get Directions</a>
              </div>
-         </div>
-          </div>
+         </div> -->
+          <!-- </div> -->
            
 
-          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -500,6 +487,37 @@
 </section>
 
 
+<footer class="footer">
+  <div class="footer-container">
+<div class="footer-div1">
+  <img class="footer-logo" src="./img/logo-white.png" alt="">
+  <p class="footer-p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia id amet dignissimos? Doloribus eius quaerat tempora nobis nesciunt excepturi eaque.</p>
+</div>
+
+
+<div class="footer-div1">
+  <h2 class="footer-h2">Keep in Touch</h2>
+  <p class="footer-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <input placeholder="Enter your Email" class="footer-input" type="text"><i class="far fa-arrow-alt-circle-right input-arrow"></i>
+</div>
+
+<div class="footer-div1 div3">
+  <h2 class="footer-h2">Contact Info</h2>
+  <p class="footer-p1">Contact this Email for Any Questions<br>fbourisly25@gmail.com</p>
+  
+</div>
+
+</div>
+<div class="footer-container2">
+  <p class="copy">&copy; Copyright 2020 - All Rights Reserved</p>
+  <span class="social-span">
+   <a href="https://github.com/C44-FawziaBourisly"><i class="fab fa-github  social"></i></a> 
+    <a href="https://www.instagram.com/joincoded/?hl=en"><i class="fab fa-instagram  social"></i></a>
+   <a href="https://twitter.com/joincoded?s=21"> <i class="fab fa-twitter  social"></i></a>
+  </span>
+</div>
+</footer>
+
 
 
 <script src="./glider.min.js"></script>
@@ -507,22 +525,32 @@
 
 </script>
 <script src="./script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=
-AIzaSyBmKr1H2niJMyTdjgpJ0er_FIQkZbjvxq8&callback=initMap"></script>
+
+<script>
+ $('.stars a').on('click', function(){
+  $('.stars span, .stars a').removeClass('active');
+
+  $(this).addClass('active');
+  $('.stars span').addClass('active');
+});
+</script>
+<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyBmKr1H2niJMyTdjgpJ0er_FIQkZbjvxq8&callback=initMap"></script> -->
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.24.0/firebase-app.js"></script>
+<!-- <script src="/__/firebase/7.24.0/firebase-app.js"></script> -->
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
  https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/7.24.0/firebase-analytics.js"></script>
+<!-- <script src="/__/firebase/7.24.0/firebase-analytics.js"></script> -->
 
 <!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+<!-- <script src="/__/firebase/init.js"></script> -->
 </body>
 </html> 
 
