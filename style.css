@@ -1236,13 +1236,17 @@ figure {
   border: 1px solid rgb(92, 92, 92);
   box-shadow: rgba(0, 0, 0, 0.363);
   border-radius: 10px;
-  width: 500px;
-  margin-left: 30px;
+  /* width: 500px; */
+  margin-left: 80px;
+  margin-bottom: 20px;
 }
 
 .product {
+  max-width: 1300px;
   display: flex;
+  /* justify-content: space-around; */
   flex-wrap: wrap;
+  padding: 15px;
 }
 
 .explore-footer {
