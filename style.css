@@ -1442,7 +1442,7 @@ span.active a:after,
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* .social {
+.social {
   color: rgb(145, 145, 145);
   padding-right: 10px;
 }
@@ -1451,7 +1451,7 @@ span.active a:after,
 }
 .social-span {
   padding-left: 55rem;
-} */
+}
 .i-counter {
   color: white;
 }
